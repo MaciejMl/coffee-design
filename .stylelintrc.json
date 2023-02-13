@@ -3,7 +3,7 @@
       "stylelint-scss"
     ],
     "rules": {
-      "block-no-empty": true,
+      "block-no-empty": null,
       "color-no-invalid-hex": true,
       "comment-empty-line-before": null,
       "declaration-colon-space-after": "always",

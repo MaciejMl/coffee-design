@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: lighten($color-dark, 75%);
+  font-family: $font-header;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: $font-light;
+  color: $color-dark;
+}
+
+.slider,
+.aboutus {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

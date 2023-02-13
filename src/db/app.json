@@ -1,1 +1,56 @@
-{} 
+{
+    "dane": {
+        "slider": {
+            "id": 1,
+            "title1": "Home of",
+            "title2": "original tastes",
+            "sliderImg": "slider-"
+            
+        },
+        "products": [
+            {
+                "id": 1,
+                "class": "small",
+                "title": "01. La Lagartija",
+                "roastingRank": 5,
+                "intesityRank": 6,
+                "description": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavour.",
+                "imgSrc": "coffee-",
+                "badge": {
+                    "badgeSrc": "badge-1.png"
+                }
+            },
+            {
+                "id": 2,
+                "class": "small",
+                "title": "02. El Tigre",
+                "roastingRank": 8,
+                "intesityRank": 9,
+                "description": "Really dark coffee, only for the real gourmets. It has bitter flavour of grapefruits and is mixed with a little bit of peanuts with carmel.",
+                "imgSrc": "coffee-"
+            },
+            {
+                "id": 3,
+                "class": "small",
+                "title": "03. La Cucaracha ",
+                "roastingRank": 3,
+                "intesityRank": 7,
+                "description": "Sweet and intense witha big amount of different flavours. Carmel, grapes, strawberry, you name it! It's great choice for warm summer days.",
+                "imgSrc": "coffee-"
+            }
+        ],
+        "info": {
+            "title": "About Us",
+            "textInfo": [
+                {
+                    "content": "Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original. Our coffees reflect us - young, wild and free. We are on journey of new tastes...",
+                    "class": "ceneter"
+                },
+                {
+                    "content": "Join us!",
+                    "class": "right"
+                }
+            ]
+        }
+    }
+}
