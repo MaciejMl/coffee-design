@@ -8,7 +8,7 @@ export const select = {
   containerOf: {
     slider: '#slider',
     productList: '#product-list',
-    info: '#info',
+    info: '#about-us',
     contact: '#contact',
   },
 };

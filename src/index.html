@@ -10,19 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="cont">
+      <div class="contAiner">
         <div class="header__wrapper">
           <div class="logo">
             <h1 class="logo__title"><a href="#">El Tigre</a></h1>
@@ -42,6 +42,9 @@
         <div id="slider" class="home-slider slider"></div>
       </section>
       <section id="products">
+        <div class="products-title">
+          <h2>products</h2>
+        </div>
         <div id="product-list" class="product-list container"></div>
       </section>
       <section id="about-us">
@@ -51,6 +54,11 @@
         <div class="contact-wrapper container"></div>
       </section>
     </div>
+    <section class="footer">
+      <h3 class="footer-text">
+        <span class="icon-copyright"></span> 2021 el tigre <span>inc.</span>
+      </h3>
+    </section>
 
     <script id="template-slider" type="text/x-handlebars-template">
       <header>
@@ -60,45 +68,57 @@
               >{{title2}}</span></h1>
             <img
               class='slider-img'
-              src='{{pathImages}}{{sliderImg}}{{id}}.png'
+              src='{{pathImages}}{{sliderImg}}{{id}}.webp'
+              alt='coffee beans slider'
             />
             <div class='slider-discover'>
-              <h3>discover</h3>
-              <a href='#products'><i class='fa-regular fa-circle-down'></i></a>
+              <p>discover</p>
+              <a
+                href='#products'
+                class='icon-down-circled2'
+                aria-label='Read more about our coffee products'
+              ></a>
             </div>
           </div>
         </div>
-
       </header>
     </script>
+
     <script id="template-products" type="text/x-handlebars-template">
       <div class='main-products'>
         <div class='product-img'>
-          <img src='{{pathImages}}{{imgSrc}}{{id}}.png' alt='' />
+          <img src='{{pathImages}}{{imgSrc}}{{id}}.webp' alt='coffee label ' />
         </div>
         <div class='product-name'>
           <h2>{{title}}</h2>
           <p>{{description}}</p>
           <ul>
-            <li>roasting: <span>{{roastingRank}}</span></li>
-            <li>intensity: <span>{{intesityRank}}</span></li>
+            <li>roasting: <span>{{roastingRank}}/10</span></li>
+            <li>intensity: <span>{{intesityRank}}/10</span></li>
           </ul>
-          <img src='{{path}}{{badge.badgeSrc}}' alt='' />
+          {{#if badgeState}}
+            <img src='{{path}}{{badge.badgeSrc}}' alt='most popular label' />
+          {{/if}}
         </div>
       </div>
     </script>
-    <script id="template-info" type="text/x-handlebars-template">
 
-      <div class="wrapper-info">
-         <h2>{{title}}</h2>
-          <div class="info-text">
+    <script id="template-info" type="text/x-handlebars-template">
+      <div class='wrapper-info'>
+        <div class='info-img'>
+          <img src='{{pathImages}}{{imgSrc}}' alt='' />
+        </div>
+        <div class='info-text-content'>
+          <h2>{{title}}</h2>
+          <div class='info-text'>
             {{#each textInfo}}
-            <p class="{{class}}">{{ content }}</p>
+              <p class='{{class}}'>{{content}}</p>
             {{/each}}
           </div>
-          </div>
         </div>
+      </div>
     </script>
+
     <script id="template-contact" type="text/x-handlebars-template">
       <div class='wrapper-form'>
         <div class='contact-wrapper'>
@@ -110,7 +130,8 @@
         </div>
       </div>
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>

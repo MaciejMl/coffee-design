@@ -36,9 +36,12 @@
         position: absolute;
         content: '';
         display: block;
-        border-top: 2px solid $color-slider;
+        border-top: 3px solid $color-slider;
         margin-left: 37.5%;
         margin-right: 37.5%;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
         height: 1px;
         width: 25%;
       }
@@ -57,17 +60,17 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: $base-size * 1.5;
-    font-weight: $font-light;
+    font-weight: $font-semibold;
     line-height: normal;
-    i {
+
+    .icon-down-circled2 {
       color: lighten($color-dark, 45%);
       font-size: $base-size * 1.8;
+      text-decoration: none;
+
       &:hover {
         color: $color-slider;
       }
     }
-  }
-
-  .slider-main {
   }
 }

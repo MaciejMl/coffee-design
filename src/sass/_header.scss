@@ -53,14 +53,10 @@
 
   a {
     @extend .h2;
-    color: lighten($color-dark, 15%);
+    color: lighten($color-dark, 20%);
     text-decoration: none;
     margin-right: ($base-size * 2);
     text-align: center;
-    // padding: $base-size ($base-size * 2);
-    // background: black;
-    // border-top-left-radius: $radius;
-    // border-top-right-radius: $radius;
 
     &.active {
       background: lighten($color-dark, 75%);

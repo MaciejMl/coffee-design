@@ -16,8 +16,9 @@
                 "intesityRank": 6,
                 "description": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavour.",
                 "imgSrc": "coffee-",
+                "badgeState": true,
                 "badge": {
-                    "badgeSrc": "badge-1.png"
+                    "badgeSrc": "badge-1.webp"
                 }
             },
             {
@@ -27,7 +28,8 @@
                 "roastingRank": 8,
                 "intesityRank": 9,
                 "description": "Really dark coffee, only for the real gourmets. It has bitter flavour of grapefruits and is mixed with a little bit of peanuts with carmel.",
-                "imgSrc": "coffee-"
+                "imgSrc": "coffee-",
+                "badgeState": false
             },
             {
                 "id": 3,
@@ -36,15 +38,21 @@
                 "roastingRank": 3,
                 "intesityRank": 7,
                 "description": "Sweet and intense witha big amount of different flavours. Carmel, grapes, strawberry, you name it! It's great choice for warm summer days.",
-                "imgSrc": "coffee-"
+                "imgSrc": "coffee-",
+                "badgeState": false
             }
         ],
         "info": {
             "title": "About Us",
+            "imgSrc": "about-us.webp",
             "textInfo": [
                 {
-                    "content": "Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original. Our coffees reflect us - young, wild and free. We are on journey of new tastes...",
-                    "class": "ceneter"
+                    "content": "Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.",
+                    "class": "center"
+                },
+                {
+                    "content": "Our coffees reflect us - young, wild and free. We are on journey of new tastes...",
+                    "class": "centers"
                 },
                 {
                     "content": "Join us!",

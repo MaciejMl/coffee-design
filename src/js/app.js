@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 
 import { settings, select, templates } from './settings.js';
-// import Product from './components/Product.js';
 import Slider from './components/Slider.js';
 import Product from './components/Product.js';
+import AboutUs from './components/AboutUs.js';
 
 const app = {
   initPages: function () {
@@ -60,6 +60,7 @@ const app = {
     const thisApp = this;
     thisApp.initHomeSlider(data.slider);
     thisApp.initHomeProductList(data.products);
+    thisApp.initInfo(data.info);
   },
 
   initHomeSlider: function (data) {
@@ -67,6 +68,9 @@ const app = {
   },
   initHomeProductList: function (data) {
     new Product(data);
+  },
+  initInfo: function (data) {
+    new AboutUs(data);
   },
 
   init: function () {
