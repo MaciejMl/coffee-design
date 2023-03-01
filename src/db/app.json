@@ -3,7 +3,8 @@
         "slider": {
             "id": 1,
             "title1": "Home of",
-            "title2": "original tastes",
+            "title2": "original",
+            "title3": "tastes",
             "sliderImg": "slider-"
             
         },

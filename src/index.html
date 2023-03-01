@@ -10,29 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="contAiner">
+      <div class="contAinerr">
         <div class="header__wrapper">
           <div class="logo">
             <h1 class="logo__title"><a href="#">El Tigre</a></h1>
             <h2 class="logo__subtitle">Venezuela coffee beans</h2>
           </div>
           <div class="main-nav">
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#contact">Contact</a>
+            <a class="main-links" href="#home">Home</a>
+            <a class="main-links" href="#products">Products</a>
+            <a class="main-links" href="#contact">Contact</a>
           </div>
+          <div class="burger-nav"><span class="icon-menu"></span></div>
         </div>
       </div>
     </header>
@@ -65,7 +59,7 @@
         <div class='slider'>
           <div class='slider-main'>
             <h1 class='slider-title'><span>{{title1}}</span><br /><span
-              >{{title2}}</span></h1>
+              >{{title2}}</span>&nbsp;<span>{{title3}}</span></h1>
             <img
               class='slider-img'
               src='{{pathImages}}{{sliderImg}}{{id}}.webp'
@@ -97,7 +91,10 @@
             <li>intensity: <span>{{intesityRank}}/10</span></li>
           </ul>
           {{#if badgeState}}
-            <img src='{{path}}{{badge.badgeSrc}}' alt='most popular label' />
+            <div class='product-badge'><img
+                src='{{path}}{{badge.badgeSrc}}'
+                alt='most popular label'
+              /></div>
           {{/if}}
         </div>
       </div>

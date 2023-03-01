@@ -10,6 +10,8 @@ export const select = {
     productList: '#product-list',
     info: '#about-us',
     contact: '#contact',
+    burgerLinks: '.icon-menu',
+    navLinks: '.main-nav',
   },
 };
 

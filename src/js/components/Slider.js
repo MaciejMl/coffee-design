@@ -5,6 +5,7 @@ class Slider {
   constructor(data) {
     const thisSlider = this;
     thisSlider.render(data);
+    thisSlider.naviBurger(data);
   }
 
   render(data) {
@@ -14,6 +15,16 @@ class Slider {
 
     const containerSlider = document.querySelector(select.containerOf.slider);
     containerSlider.appendChild(generatedElem);
+  }
+
+  naviBurger() {
+    const burgerLink = document.querySelector(select.containerOf.burgerLinks);
+    const navLinks = document.querySelector(select.containerOf.navLinks);
+
+    burgerLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      navLinks.classList.toggle('active');
+    });
   }
 }
 
