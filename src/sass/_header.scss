@@ -14,7 +14,6 @@
   line-height: 1;
   flex: 0 0 50%;
   text-align: center;
-  // border: 1px solid red;
 
   &__title {
     margin: 0 65px $base-size 0;
@@ -73,7 +72,7 @@
   flex: 0 0 50%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 499px) {
   .main-nav {
     display: none;
     position: absolute;

@@ -30,13 +30,9 @@ const app = {
         const ClickedElement = this;
         event.preventDefault();
 
-        /* get page id from href attrib */
         const id = ClickedElement.getAttribute('href').replace('#', '');
-
-        /* run thisApp.activatePage with that id */
         thisApp.activatePage(id);
 
-        /* change URL hash */
         window.location.hash = `#/${id}`;
       });
     }
@@ -64,7 +60,7 @@ const app = {
   },
 
   initHomeSlider: function (data) {
-    new Slider(data); //plik home.js podajesz mu kontener gdzie ma trafić zawartość
+    new Slider(data);
   },
   initHomeProductList: function (data) {
     new Product(data);
