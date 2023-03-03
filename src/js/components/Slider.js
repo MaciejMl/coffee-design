@@ -10,7 +10,7 @@ class Slider {
 
   render(data) {
     data.pathImages = path.images;
-    const homeSlider = templates.slider(data); // settings.js -> export const templates () tutaj wybierasz tak naprawdę template do uzywania po przez stałą templates i slider
+    const homeSlider = templates.slider(data);
     const generatedElem = utils.createDOMFromHTML(homeSlider);
 
     const containerSlider = document.querySelector(select.containerOf.slider);

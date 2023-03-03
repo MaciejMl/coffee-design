@@ -14,7 +14,7 @@ class Product {
       dane.pathImages = path.products;
       dane.path = path.images;
       // dane.roastingRank = `${dane.roastingRank}`;
-      const homeProduct = templates.product(dane); // settings.js -> export const templates () tutaj wybierasz tak naprawdę template do uzywania po przez stałą templates i slider
+      const homeProduct = templates.product(dane);
       const generatedElem = utils.createDOMFromHTML(homeProduct);
 
       const containerSlider = document.querySelector(

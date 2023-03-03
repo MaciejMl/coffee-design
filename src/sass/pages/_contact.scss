@@ -1,0 +1,96 @@
+.wrapper-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  align-items: center;
+
+  .contact-wrapper {
+    flex: 1;
+    width: 500px;
+    align-items: center;
+
+    .contact-form {
+      h2 {
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        color: $color-slider;
+        font-size: ($base-size * 3);
+        letter-spacing: 8px;
+        margin-bottom: 40px;
+
+        &:after {
+          position: absolute;
+          content: '';
+          display: block;
+          border-top: 3px solid $color-slider;
+          top: 115%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 1px;
+          width: 80%;
+        }
+      }
+
+      input {
+        height: 30px;
+      }
+
+      input,
+      label,
+      textarea {
+        display: block;
+        margin: 0 auto;
+      }
+
+      input,
+      textarea {
+        border: 2px solid black;
+        width: 200px;
+      }
+
+      label {
+        text-align: center;
+        padding: 10px 0;
+        text-transform: uppercase;
+        color: black;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 4px;
+      }
+
+      textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 70px;
+      }
+
+      #submit {
+        cursor: pointer;
+        padding: 9px 10px 22px 10px;
+        border: 1px solid $color-slider;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        background: $color-slider;
+        width: 100px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width: 499px) {
+  .contact-wrapper {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 374px) {
+  .contact-wrapper {
+    max-width: 320px;
+  }
+}

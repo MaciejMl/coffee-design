@@ -6,12 +6,25 @@ export const select = {
     contact: '#template-contact',
   },
   containerOf: {
-    slider: '#slider',
-    productList: '#product-list',
+    slider: '.home-slider',
+    productList: '#products',
     info: '#about-us',
     contact: '#contact',
     burgerLinks: '.icon-menu',
     navLinks: '.main-nav',
+    pages: '#pages',
+  },
+  navi: {
+    links: '.main-links',
+  },
+};
+
+export const classNames = {
+  pages: {
+    active: 'active',
+  },
+  nav: {
+    active: 'active',
   },
 };
 

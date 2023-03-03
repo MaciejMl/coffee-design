@@ -56,7 +56,7 @@
     text-align: center;
 
     &.active {
-      background: lighten($color-dark, 75%);
+      color: $color-slider;
     }
   }
 

@@ -22,7 +22,7 @@
             <h2 class="logo__subtitle">Venezuela coffee beans</h2>
           </div>
           <div class="main-nav">
-            <a class="main-links" href="#home">Home</a>
+            <a class="main-links" href="#home-slider">Home</a>
             <a class="main-links" href="#products">Products</a>
             <a class="main-links" href="#contact">Contact</a>
           </div>
@@ -32,22 +32,37 @@
     </header>
 
     <div id="pages">
+      <div id="slider" class="home-slider slider"></div>
+
       <section id="home-slider">
-        <div id="slider" class="home-slider slider"></div>
+        <div class="products-title products">
+          <h2>products</h2>
+        </div>
+        <div id="products">
+          <div id="product-list" class="product-list products container"></div>
+        </div>
+
+        <div id="about-us">
+          <div class="about-us-wrapper container"></div>
+        </div>
       </section>
+
       <section id="products">
         <div class="products-title">
           <h2>products</h2>
         </div>
-        <div id="product-list" class="product-list container"></div>
+        <div id="product-list-two" class="product-list container"></div>
       </section>
-      <section id="about-us">
-        <div class="about-us-wrapper container"></div>
-      </section>
+
+      <!-- <section id="about-us" class="startup">
+        <div class="about-us-wrapper container home-site"></div>
+      </section> -->
+
       <section id="contact">
         <div class="contact-wrapper container"></div>
       </section>
     </div>
+
     <section class="footer">
       <h3 class="footer-text">
         <span class="icon-copyright"></span> 2021 el tigre <span>inc.</span>
@@ -120,9 +135,19 @@
       <div class='wrapper-form'>
         <div class='contact-wrapper'>
           <form class='contact-form'>
-            <input type='text' name='name' />
-            <input type='email' name='email' />
-            <textarea name='contentForm' id='' cols='30' rows='10'></textarea>
+            <h2>contact us</h2>
+            <label for='name'> name</label>
+            <input type='text' id='name' name='name' />
+            <label for='title'> title</label>
+            <input type='text' id='title' name='title' />
+            <label for='message'> message</label>
+            <textarea
+              name='contentForm'
+              id='message'
+              cols='30'
+              rows='10'
+            ></textarea>
+            <input type='submit' id='submit' value='submit' />
           </form>
         </div>
       </div>
