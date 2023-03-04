@@ -7,6 +7,7 @@ export const select = {
   },
   containerOf: {
     slider: '.home-slider',
+    sliderMain: '#home-slider',
     productList: '#products',
     info: '#about-us',
     contact: '#contact',
@@ -30,7 +31,6 @@ export const classNames = {
 
 export const settings = {
   db: {
-    // url: '//localhost:3131',
     url:
       '//' +
       window.location.hostname +

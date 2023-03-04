@@ -13,7 +13,7 @@ class Product {
       var dane = data[key];
       dane.pathImages = path.products;
       dane.path = path.images;
-      // dane.roastingRank = `${dane.roastingRank}`;
+
       const homeProduct = templates.product(dane);
       const generatedElem = utils.createDOMFromHTML(homeProduct);
 

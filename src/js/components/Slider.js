@@ -1,4 +1,4 @@
-import { templates, select, path } from '../settings.js';
+import { templates, select, path, classNames } from '../settings.js';
 import utils from '../utils.js';
 
 class Slider {
@@ -23,7 +23,7 @@ class Slider {
 
     burgerLink.addEventListener('click', function (event) {
       event.preventDefault();
-      navLinks.classList.toggle('active');
+      navLinks.classList.toggle(classNames.nav.active);
     });
   }
 }
