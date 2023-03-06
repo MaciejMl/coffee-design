@@ -17,10 +17,10 @@ class Product {
       const homeProduct = templates.product(products);
       const generatedElem = utils.createDOMFromHTML(homeProduct);
 
-      const containerSlider = document.querySelector(
+      const containerProduct = document.querySelector(
         select.containerOf.productList
       );
-      containerSlider.appendChild(generatedElem);
+      containerProduct.appendChild(generatedElem);
     }
   }
 }

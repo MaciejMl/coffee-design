@@ -12,8 +12,8 @@ class Contact {
     const homeContact = templates.contact();
     const generatedElem = utils.createDOMFromHTML(homeContact);
 
-    const containerInfo = document.querySelector(select.containerOf.contact);
-    containerInfo.appendChild(generatedElem);
+    const containerContact = document.querySelector(select.containerOf.contact);
+    containerContact.appendChild(generatedElem);
   }
 }
 
