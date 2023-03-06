@@ -10,11 +10,11 @@ class Product {
 
   render(data) {
     for (let key of Object.keys(data)) {
-      var dane = data[key];
-      dane.pathImages = path.products;
-      dane.path = path.images;
+      let products = data[key];
+      products.pathImages = path.products;
+      products.path = path.images;
 
-      const homeProduct = templates.product(dane);
+      const homeProduct = templates.product(products);
       const generatedElem = utils.createDOMFromHTML(homeProduct);
 
       const containerSlider = document.querySelector(

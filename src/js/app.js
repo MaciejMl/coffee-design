@@ -4,7 +4,7 @@ import { settings, select, classNames } from './settings.js';
 import Slider from './components/Slider.js';
 import Product from './components/Product.js';
 import AboutUs from './components/AboutUs.js';
-import Contact from './components/contact.js';
+import Contact from './components/Contact.js';
 
 const app = {
   initPages: function () {
@@ -93,7 +93,7 @@ const app = {
     thisApp.initHomeSlider(data.slider);
     thisApp.initHomeProductList(data.products);
     thisApp.initInfo(data.info);
-    thisApp, this.initContact();
+    thisApp.initContact();
   },
 
   initHomeSlider: function (data) {
